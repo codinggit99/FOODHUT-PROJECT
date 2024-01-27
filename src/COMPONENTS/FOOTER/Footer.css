@@ -1,0 +1,110 @@
+.footer {
+    background-color:black;
+    color: aqua;
+    font-size: 14px;
+    padding:60px 30px 20px 30px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: aqua;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.footer h3 {
+    color: tomato;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-1 h1 {
+    animation: fadeInOut 3s infinite; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+   
+}
+
+.footer-col-2 img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+} 
+
+ul {
+    list-style-type: none;
+}
+
+.footer-col-3 li {
+    font-size: 30px;
+    color: palegreen;
+}
+
+.footer-col-4 li {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.app-logo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.app-logo img {
+    width: 50px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0 ;
+}
+
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
