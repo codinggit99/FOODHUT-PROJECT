@@ -6,10 +6,10 @@ const Footer = () => (
             <div className= "footer-col-1">
                 <p>Thank You for visiting... </p>
             <h1>
-        F<b>oo</b>
+        🦐F<b>oo</b>
         <b3>d</b3>
         <b4>H</b4>
-        <b5>u</b5>T🍴
+        <b5>u</b5>T
       </h1>
 
             </div>

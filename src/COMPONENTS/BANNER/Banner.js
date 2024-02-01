@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CustomAlert from '../CustomAlert/customAlert.js';
 import './Banner.css';
 
-const Banner = () => {
+const Banner = ({handleAboutUsClick}) => {
   const [showForm, setShowForm] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState('');
@@ -30,7 +30,7 @@ const Banner = () => {
 
     try {
       const response = await fetch
-      ('https://my-server-express-xij2.onrender.com/api/register', {
+      ('https://foddhut-server-uy6t.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -85,17 +85,20 @@ const Banner = () => {
   return (
     <div className="banner-container">
       <h1>
-        F<b>oo</b>
+        🦐F<b>oo</b>
         <b3>d</b3>
         <b4>H</b4>
-        <b5>u</b5>T🍴
+        <b5>u</b5>T
       </h1>
       <div className="banner">
         <div className="heading">
           <button className="your-button-class" onClick={handleButtonClick}>
             Create Account
           </button>
-          <b>Your only <b3>on</b3> <b3>food</b3> destination!😋😋</b>
+          <button className='about-btn' onClick={handleAboutUsClick}>
+            About Us!
+          </button>
+          <b1>YOUR <b8> ONLY ON</b8> <b9>FOOD</b9> DESTINATION!😋😋</b1>
           <h2>BEST FOOD</h2>
           <h3>
             <b7>FASTEST</b7> DELIVERY

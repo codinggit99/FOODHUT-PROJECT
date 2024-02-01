@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 500px;
-    background-image:url(https://gttp.imgix.net/352610/x/0/14-best-pampanga-restaurants-culinary-capital-of-the-philippines-28.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883);
+    min-width: 100%;
+    min-height: 500px;
+    background-image:url(https://img.freepik.com/free-photo/street-chinese-food-with-copy-space_23-2148242502.jpg);
     background-size: cover;
     background-color: black;
     text-align: center;
+    margin-bottom: 40px;
 } 
 
 @keyframes appear {
@@ -22,11 +23,9 @@
     }
 }
 
-.banner .heading b {
+.banner .heading b1 {
     flex: 1;
     justify-self: center;
-    color: whitesmoke;
-    font-size: 3rem;
     font-weight: bold; 
     position: relative;
     animation: appear 10s ease-in-out 0s forwards;
@@ -46,18 +45,18 @@ b7 {
     top: 0;
     right: 0;
     margin: auto;
-    margin-right: 660px;
-    margin-top: 100px;
-    padding: 10px 20px;
+    margin-right: 850px;
+    margin-top: 20px;
     display: inline-block;
     background: #a71d1d;
     color: #fff;
     padding: 15px 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: background 1s;
     border: none;
     
   }
+
   
   .your-button-class:hover {
     background-color: black;
@@ -126,11 +125,13 @@ b7 {
     cursor: pointer;
     margin-left: 100px;
     transition: background 1s;
+  
   }
+
   
   .submit-button:hover {
     background-color: black;
-    cursor: pointer;
+    cursor:pointer;
   }
   
   @keyframes fadeIn {
@@ -161,45 +162,25 @@ b7 {
     cursor: pointer;
   }
   
-  .login-btn {
+ 
+
+  .about-btn {
     position:absolute;
     top: 0;
     right: 0;
     margin: auto;
-    margin-right: 620px;
-    margin-top: 100px;
-    padding: 14px 20px;
+    margin-right: 730px;
+    margin-top: 20px;
     display: inline-block;
     background: #a71d1d;
     color: #fff;
-    border-radius: 10px;
+    padding: 15px 10px;
+    border-radius: 20px;
     transition: background 1s;
     border: none;
-
-  }
-
-  .login-btn:hover {
+}
+.about-btn:hover {
     background-color: black;
     cursor: pointer;
-  }
-
-  .logout-btn {
-    position:absolute;
-    top: 0;
-    right: 0;
-    margin: auto;
-    margin-right: 475px;
-    margin-top: 100px;
-    padding: 14px 20px;
-    display: inline-block;
-    background: #a71d1d;
-    color: #fff;
-    border-radius: 10px;
-    transition: background 1s;
-    border: none;
-  }
-
-  .logout-btn:hover {
-    background-color: black;
-    cursor: pointer;
-  }
+}
+  

@@ -1,76 +1,87 @@
-.food-item {
-  display: flex; /* Set display to flex to arrange children in a row */
+.food-list {
+  list-style: none;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
-  align-items: center; 
-  margin-bottom: 20px; 
+  justify-content: space-between;
 }
 
+.food-item {
+  box-sizing: border-box;
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 400px;
+  margin-top: 30px;
+}
 
 .food-item img {
-  width: 300px; 
-  height: 300px; 
-  object-fit: cover; 
-  border-radius: 8px; 
-  margin-right: 16px;
-  border: 2px solid black;
-  transition: transform 0.3s ease;
-  margin-left: 80px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+
 }
 
 .food-item img:hover {
-  transform: scale(1.1);
-}
-
-
-.food-item .content {
-  flex: 1; 
-}
-
-
-.food-item .buttons {
-  display: flex; 
-  align-items: center;
-  
-}
-
-
-.food-item .buttons button {
-  background-color: #f44336;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
   cursor: pointer;
-  margin-left: 8px; 
+  border-color: blue;
+  transform:none;
 }
 
-.food-item .buttons button:hover {
-  background-color: black;
+.food-text {
+  text-align: center;
 }
-  
-  .btn-container {
-    text-align: center;
+
+h6 {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+h7 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+  p {
+    font-size: 30px;
+    font-weight: bold;
+    
   }
-  
-  .order-btn {
-  
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-container button {
+  font-size: 20px;
+}
+
+
+
+     .order-btn {
     background: #a71d1d;
     color: #fff;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 15px 10PX;
+    border-radius: 20px;
     transition: background 1s;
     border: none;
-    margin-right: 200px;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    
 
-  }
+    }
   
-  .order-btn:hover {
+    .order-btn:hover {
     background-color: black;
     cursor: pointer;
-  }
-  
-  .overlay {
+    }
+      .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -81,87 +92,75 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
+    }
   
-  .buy-now-form {
+     .buy-now-form {
     padding: 20px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: fadeIn 2s ease-in-out;
-  }
+    }
   
-  .buy-now-form button {
+    .buy-now-form button {
     background-color: #f44336;
     color: #fff;
     border: none;
     padding: 8px 12px;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .buy-now-form button:hover {
-    background-color: black;
-  }
+    }
+   
+    .buy-now-form button:hover {
+      background-color: black;
+    }
 
 
-  .buy-now-form form{
+     .buy-now-form form{
   display: flex;
-  flex-direction: column; 
-  }
+  flex-direction:column; 
+     }
 
-.buy-now-form label {
+   .buy-now-form label {
   margin-bottom: 8px;
   color: black;
   font-size: 25px;
   font-weight: 500;
-}
+  text-align: left;
+   }
 
-.buy-now-form input {
+   .buy-now-form input {
   width: 200px;
   margin-right: 8px;
   padding: 8px;
   border: 2px solid crimson;
   border-radius: 20px;
-}
+   }
 
-.buy-now-form .button-container {
+     .buy-now-form .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
-}
-
-.buy-now-form button {
- 
-  background-color: #f44336;
+   }
+   .buy-now-form button{
+  background-color: #f44336; 
   color: #fff;
   border: none;
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
- 
+  margin-bottom: 40px;
   margin-left: 8px;
-}
+    }
 
-.buy-now-form button:hover {
+   .buy-now-form button:hover {
   background-color: black;
-}
-.buy-now-form .error {
+  }
+   .buy-now-form .error {
   color: #f44336;
   font-size: 12px;
   margin-top: 4px;
-}
+   }
   
-h6 {
-   font-size: 25px;
-   margin-right: 50px;
-}
-
-h7 {
-   font-size: 30px;
-}
-
-p {
-   font-size: 30px;
    
-}
+     

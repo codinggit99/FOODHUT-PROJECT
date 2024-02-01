@@ -1,15 +1,19 @@
 h1 {
     color: red;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 90px;
-}
-b {
-    color: red;
     font-size: 50px;
+    padding-left: 15px;
+}
+b1 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+b8 {
+    color: white;
 }
 b3 {
-    color: gold;
+    color: red;
     font-size: 55px;
 }
 b4 {
@@ -26,4 +30,68 @@ h2 {
 h3 {
     font-size: 40px;
     color: white;
+}
+
+heading {
+    font-size: 50px;
+    font-weight: 800;
+    color: crimson;
+    margin-left: 500px;
+}
+
+#btn1 {
+    background: #a71d1d;
+    color: #fff;
+    padding: 15px 10PX;
+    border-radius: 20px;
+    transition: background 1s;
+    border: none;
+    margin-right: 5px;
+    margin-left: 500px;
+}
+
+#btn2 {
+    background: #a71d1d;
+    color: #fff;
+    padding: 15px 10PX;
+    border-radius: 20px;
+    transition: background 1s;
+    border: none;
+    margin-right: 5px;
+}
+#btn3 {
+    background: #a71d1d;
+    color: #fff;
+    padding: 15px 10PX;
+    border-radius: 20px;
+    transition: background 1s;
+    border: none;
+    margin-right: 5px;
+}
+#btn4 {
+    background: #a71d1d;
+    color: #fff;
+    padding: 15px 10PX;
+    border-radius: 20px;
+    transition: background 1s;
+    border: none;
+    margin-right: 5px;
+}
+#btn5 {
+    background: #a71d1d;
+    color: #fff;
+    padding: 15px 10PX;
+    border-radius: 20px;
+    transition: background 1s;
+    border: none;
+    margin-right: 5px;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
+    background-color: black;
+    cursor: pointer;
 }
